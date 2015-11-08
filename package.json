@@ -19,6 +19,6 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "run": "./bin/hubot --name hubot"
+    "start": "./bin/hubot --name hubot"
   }
 }
