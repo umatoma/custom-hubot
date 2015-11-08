@@ -19,6 +19,8 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "start": "./bin/hubot --name hubot"
+    "start": "forever start ./forever/development.json",
+    "restart": "forever restartall",
+    "stop": "forever stopall"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "uid": "hubot",
+  "append": true,
+  "watch": true,
+  "script": "bin/hubot",
+  "args": ["--name", "hubot"]
+}
