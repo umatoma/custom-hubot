@@ -21,6 +21,13 @@ module.exports = (robot) ->
     'http://i.imgur.com/MFpRk6N.jpg'
   ]
 
+  sinchoku_imgs = [
+    'http://i.imgur.com/8aQYLN4.jpg'
+    'http://i.imgur.com/xw9iu4s.jpg'
+    'http://i.imgur.com/iVkTVIA.jpg'
+    'http://i.imgur.com/RkAZw3J.jpg'
+  ]
+
   # Cron: 今日も一日がんばるぞい
   # Schedule: 月~金 09:45
   new CronJob
@@ -29,6 +36,18 @@ module.exports = (robot) ->
       msg = """
             今日も一日頑張るぞい
             #{HubotHelper.random(ganbaruzoi_imgs)}
+            """
+      robot.send {}, msg
+    start: true
+
+  # Cron: 進捗どうですか？
+  # Schedule: 月~金 15:00
+  new CronJob
+    cronTime: '0 0 15 * * 1-5'
+    onTick: ->
+      msg = """
+            進捗どうですか？
+            #{HubotHelper.random(sinchoku_imgs)}
             """
       robot.send {}, msg
     start: true
