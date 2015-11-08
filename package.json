@@ -5,6 +5,7 @@
   "author": "umatoma <umatomakun@gmail.com>",
   "description": "Costom Hubot",
   "dependencies": {
+    "cron": "^1.0.9",
     "hubot": "^2.16.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-help": "^0.1.2",
@@ -16,7 +17,7 @@
     "hubot-shipit": "^0.2.0"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "0.12.x"
   },
   "scripts": {
     "start": "forever start ./forever/development.json",
