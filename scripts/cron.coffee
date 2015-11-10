@@ -21,6 +21,7 @@ module.exports = (robot) ->
     'http://i.imgur.com/MFpRk6N.jpg'
   ]
 
+  # 画像URL (進捗どうですか？)
   sinchoku_imgs = [
     'http://i.imgur.com/8aQYLN4.jpg'
     'http://i.imgur.com/xw9iu4s.jpg'
