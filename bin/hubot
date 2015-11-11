@@ -10,4 +10,4 @@ if [ -f ".env" ]; then
   source .env
 fi
 
-exec node_modules/.bin/hubot --name "custom-hubot" "$@"
+exec node_modules/.bin/hubot --name "hubot" "$@"
