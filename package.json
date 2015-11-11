@@ -20,7 +20,7 @@
     "node": "0.12.x"
   },
   "scripts": {
-    "start": "forever start ./forever/development.json",
+    "start": "forever start forever.json",
     "restart": "forever restartall",
     "stop": "forever stopall"
   }

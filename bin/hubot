@@ -10,4 +10,9 @@ if [ -f ".env" ]; then
   source .env
 fi
 
+if [ -n $HUBOT_ADAPTER_NAME ]; then
+  exec node_modules/.bin/hubot --name "hubot" --adapter "$HUBOT_ADAPTER_NAME" "$@"
+  exit 1
+fi
+
 exec node_modules/.bin/hubot --name "hubot" "$@"
